@@ -1,7 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-player_move()
 
-shooting()
-
-shooting_effect()
+shot_effect()

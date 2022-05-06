@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-player_move()
 
-shooting()
-
-shooting_effect()
+lerp_effect()
+shot_destruction()
