@@ -2,6 +2,10 @@
 // You can write your code in this editor
 turn_direction = room_speed * random_range(2,6)
 
+distance_player = 200
+
+life = 2
+
 enemy_moviment = function()
 {
 direction = irandom(359)
@@ -21,11 +25,39 @@ stay_in_room = function(){
 }
 }
 
-
 change_direction = function(){
 	turn_direction--
 	if (turn_direction <= 0){
 	 enemy_moviment()
 	 turn_direction = room_speed * random_range(2,6)
 	}
+}
+
+follow_player = function(){
+	if (instance_exists(obj_player)){
+		var _distance = point_distance(x, y, obj_player.x, obj_player.y)
+		
+			if (_distance <= distance_player){
+				var _distance_player = point_direction(x, y, obj_player.x, obj_player.y)
+				direction = _distance_player
+		}
+	}
+}
+
+///@method lost_life(valor_damage);
+lost_life = function(_damage){
+	if (_damage == undefined){
+		_damage = 1
+	}
+	life -= _damage
+	if (life <= 0){
+		instance_destroy()
+		enemy_explosion()
+	}
+}
+
+enemy_explosion = function(){
+	repeat(4){
+		instance_create_layer(x, y, "Shots", obj_enemy_piece)
+}
 }

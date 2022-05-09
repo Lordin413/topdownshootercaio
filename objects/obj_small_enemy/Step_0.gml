@@ -5,3 +5,7 @@
 stay_in_room()
 
 change_direction()
+
+follow_player()
+
+show_debug_message(life)

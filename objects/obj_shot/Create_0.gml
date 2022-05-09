@@ -3,6 +3,7 @@
 
 brilho = spr_shot_effect
 timer = room_speed * 0.8
+damage = 1
 
 image_xscale = 2
 image_yscale = image_xscale
@@ -23,12 +24,20 @@ lerp_effect = function(){
 	image_yscale = image_xscale
 }
 
-
 shot_destruction = function(){
 	
 	if (timer <= 0){
 		instance_destroy()
 	}else{
 		timer--
+	}
+}
+	
+colide_enemy = function(){
+	
+	var _colide = instance_place(x, y, obj_small_enemy)
+	if (_colide){
+		_colide.lost_life(damage)
+		instance_destroy()
 	}
 }

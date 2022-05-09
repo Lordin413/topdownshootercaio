@@ -10,6 +10,8 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"spr_shoot","path":"sprites/spr_shoot/spr_shoot.yy",},"order":2,},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"order":2,},
+    {"id":{"name":"obj_enemy_piece","path":"objects/obj_enemy_piece/obj_enemy_piece.yy",},"order":5,},
+    {"id":{"name":"spr_enemy_piece","path":"sprites/spr_enemy_piece/spr_enemy_piece.yy",},"order":6,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
