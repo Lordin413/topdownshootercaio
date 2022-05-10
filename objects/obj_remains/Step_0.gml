@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+image_alpha -= 0.006
 
-stay_in_room()
-
-change_direction()
-
-follow_player()
-
+if (image_alpha <= 0) instance_destroy()

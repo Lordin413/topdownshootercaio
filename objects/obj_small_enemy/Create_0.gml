@@ -53,11 +53,12 @@ lost_life = function(_damage){
 	if (life <= 0){
 		instance_destroy()
 		enemy_explosion()
+		instance_create_layer(x, y, "Shots", obj_remains)
 	}
 }
 
 enemy_explosion = function(){
-	repeat(4){
+	repeat(7){
 		instance_create_layer(x, y, "Shots", obj_enemy_piece)
 }
 }

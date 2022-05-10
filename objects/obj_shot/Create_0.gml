@@ -39,5 +39,6 @@ colide_enemy = function(){
 	if (_colide){
 		_colide.lost_life(damage)
 		instance_destroy()
+		instance_create_layer(x, y, "Shots", obj_impact_shot)
 	}
 }
