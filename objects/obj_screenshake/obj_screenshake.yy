@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_control",
+  "name": "obj_screenshake",
   "tags": [],
   "resourceType": "GMObject",
 }

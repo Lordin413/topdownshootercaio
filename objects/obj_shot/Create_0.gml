@@ -4,6 +4,7 @@
 brilho = spr_shot_effect
 timer = room_speed * 0.8
 damage = 1
+shake = 3
 
 image_xscale = 2
 image_yscale = image_xscale
@@ -40,5 +41,6 @@ colide_enemy = function(){
 		_colide.lost_life(damage)
 		instance_destroy()
 		instance_create_layer(x, y, "Shots", obj_impact_shot)
+		if (global.shake < shake) global.shake = shake
 	}
 }

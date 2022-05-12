@@ -8,3 +8,4 @@ change_direction()
 
 follow_player()
 
+show_debug_message(global.shake)

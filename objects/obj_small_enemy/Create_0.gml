@@ -6,6 +6,8 @@ distance_player = 200
 
 life = 2
 
+shake = 10
+
 enemy_moviment = function()
 {
 direction = irandom(359)
@@ -54,6 +56,7 @@ lost_life = function(_damage){
 		instance_destroy()
 		enemy_explosion()
 		instance_create_layer(x, y, "Shots", obj_remains)
+		if (global.shake < shake) global.shake = shake
 	}
 }
 
