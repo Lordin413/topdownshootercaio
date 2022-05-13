@@ -1,3 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_inherited()
+
+stay_in_room()
+
+change_direction()
+
+follow_player()
+
+
+

@@ -36,7 +36,7 @@ shot_destruction = function(){
 	
 colide_enemy = function(){
 	
-	var _colide = instance_place(x, y, obj_small_enemy)
+	var _colide = instance_place(x, y, obj_enemy_functions)
 	if (_colide){
 		_colide.lost_life(damage)
 		instance_destroy()

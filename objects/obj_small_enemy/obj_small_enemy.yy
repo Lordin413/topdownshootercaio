@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy_functions",
+    "path": "objects/obj_enemy_functions/obj_enemy_functions.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "enemy",
+    "path": "folders/Objects/enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_small_enemy",

@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -27,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "player",
-    "path": "folders/Objects/player.yy",
+    "name": "enemy",
+    "path": "folders/Objects/enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_enemy_functions",
   "tags": [],
   "resourceType": "GMObject",
 }
