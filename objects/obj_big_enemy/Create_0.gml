@@ -10,3 +10,16 @@ speed				= irandom(2)
 explosion_repeat	= 8
 shake				= 12
 distance_player		= 0
+lay_time			= room_speed * 3
+enemy_damage		= 2
+
+
+
+lay_an_egg = function(){
+	lay_time--
+	if (lay_time <= 0){
+		instance_create_layer(x, y, "Instances", obj_egg)	
+		lay_time = room_speed * 3
+	}
+	
+}

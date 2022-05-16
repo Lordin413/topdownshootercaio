@@ -8,3 +8,4 @@ speed				= irandom(3)
 explosion_repeat	= 4
 shake				= 6
 distance_player		= 200
+enemy_damage		= 1

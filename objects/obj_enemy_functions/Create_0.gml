@@ -6,6 +6,7 @@ distance_player		= 1
 life				= 1
 shake				= 1
 explosion_repeat	= 1
+enemy_damage		= 0
 
 stay_in_room = function(){
 	image_angle = direction

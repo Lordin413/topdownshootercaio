@@ -5,3 +5,7 @@ player_move()
 shooting()
 
 shooting_effect()
+
+lose_life()
+
+

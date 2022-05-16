@@ -2,13 +2,15 @@
 // You can write your code in this editor
 
 
-player_speed = 5
-horizontal_speed = 0
-vertical_speed = 0
-delay_shot = 0
-speed_shot = 15
-wait_shot = room_speed * 0.2
-sprite_time = 0
+player_speed		= 5
+horizontal_speed	= 0
+vertical_speed		= 0
+delay_shot			= 0
+speed_shot			= 15
+wait_shot			= room_speed * 0.2
+sprite_time			= 0
+player_life			= 3
+losing_life			= true
 
 
 player_move = function(){
@@ -64,5 +66,17 @@ shooting_effect = function(){
 	if (sprite_time <= 0){
 		sprite_index = spr_player
 		sprite_time = room_speed * 0.3
+	}
+}
+	
+	
+lose_life = function(){
+	var _enemy_damage = instance_place(x, y, obj_enemy_functions)
+	if (_enemy_damage){
+			player_life -= _enemy_damage.enemy_damage
+			show_message(player_life)
+	}
+	if (player_life <= 0){
+		instance_destroy()	
 	}
 }
