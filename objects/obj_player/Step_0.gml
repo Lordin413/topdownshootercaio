@@ -8,4 +8,6 @@ shooting_effect()
 
 lose_life()
 
+invincible_player()
 
+show_debug_message(image_alpha)

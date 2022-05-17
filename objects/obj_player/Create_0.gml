@@ -10,7 +10,9 @@ speed_shot			= 15
 wait_shot			= room_speed * 0.2
 sprite_time			= 0
 player_life			= 3
-losing_life			= true
+invincible			= false
+invincible_time		= 0
+blink				= 0.05
 
 
 player_move = function(){
@@ -69,14 +71,28 @@ shooting_effect = function(){
 	}
 }
 	
-	
 lose_life = function(){
 	var _enemy_damage = instance_place(x, y, obj_enemy_functions)
-	if (_enemy_damage){
+	if (_enemy_damage) & (invincible = false){
 			player_life -= _enemy_damage.enemy_damage
-			show_message(player_life)
+			invincible_time = room_speed * 3
 	}
 	if (player_life <= 0){
 		instance_destroy()	
 	}
 }
+	
+invincible_player = function(){
+	if (invincible_time <= 0){
+		invincible = false
+		image_alpha = 1
+		
+	}else{
+		invincible_time--
+		invincible = true
+		image_alpha += blink
+	}
+	if (image_alpha > 1 or image_alpha < 0) blink *= -1;
+}
+	
+
