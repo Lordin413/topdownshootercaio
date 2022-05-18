@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"obj_small_enemy","path":"objects/obj_small_enemy/obj_small_enemy.yy",},"order":1,},
     {"id":{"name":"spr_player_shooting","path":"sprites/spr_player_shooting/spr_player_shooting.yy",},"order":4,},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":11,},
     {"id":{"name":"spr_small_enemy","path":"sprites/spr_small_enemy/spr_small_enemy.yy",},"order":5,},
     {"id":{"name":"spr_shot_effect","path":"sprites/spr_shot_effect/spr_shot_effect.yy",},"order":3,},
     {"id":{"name":"obj_impact_shot","path":"objects/obj_impact_shot/obj_impact_shot.yy",},"order":1,},

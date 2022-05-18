@@ -38,6 +38,7 @@ if ( right || left || up || down){
 	image_speed=0;
 }
 
+
 }
 	
 	

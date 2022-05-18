@@ -10,4 +10,4 @@ lose_life()
 
 invincible_player()
 
-show_debug_message(image_alpha)
+if (keyboard_check_pressed(ord("L"))) player_speed++
