@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+randomize()
 
 global.level = 1
+global.player_life			= 3
 restart_timer = room_speed * 2
+
 
 
 start_room = function(){
@@ -20,8 +22,8 @@ start_room = function(){
 		instance_create_layer(_x, _y, "Instances", obj_player)
 	}
 	create_enemies()
+	change_background()
 }
-
 
 create_enemies = function(){
 	var _qtd = irandom_range(2, 4) * global.level
@@ -54,3 +56,10 @@ level_up = function(){
 	
 }
 
+change_background = function(){
+
+	var _layer_id = layer_get_id("Background"); 
+	var _background_id = layer_background_get_id(_layer_id);
+	var _choose_sprite = choose(spr_background,spr_background_2,spr_background_3);
+	layer_background_sprite(_background_id,_choose_sprite);
+}

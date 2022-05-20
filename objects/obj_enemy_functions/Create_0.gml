@@ -7,6 +7,7 @@ life				= 1
 shake				= 1
 explosion_repeat	= 1
 enemy_damage		= 0
+cause_damage		= false
 
 stay_in_room = function(){
 	image_angle = direction
@@ -62,6 +63,7 @@ follow_player = function(){
 
 enemy_explosion = function(){
 	repeat(explosion_repeat){
-		instance_create_layer(x, y, "Shots", obj_enemy_piece)
+		var _piece = instance_create_layer(x, y, "Shots", obj_enemy_piece)
+		_piece.cause_damage = cause_damage
 }
 }

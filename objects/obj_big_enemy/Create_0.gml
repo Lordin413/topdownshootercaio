@@ -7,11 +7,12 @@ event_inherited();
 life				= 5
 turn_direction		= room_speed * irandom_range(4,8)
 speed				= irandom(2)
-explosion_repeat	= 8
+explosion_repeat	= 6
 shake				= 12
 distance_player		= 0
-lay_time			= room_speed * 3
+lay_time			= room_speed * 2
 enemy_damage		= 2
+cause_damage		= true
 
 
 
@@ -23,3 +24,5 @@ lay_an_egg = function(){
 	}
 	
 }
+
+

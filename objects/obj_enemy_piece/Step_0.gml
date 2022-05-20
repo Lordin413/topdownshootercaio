@@ -3,4 +3,5 @@
 
 slow_down()
 
+friendly_fire()
 

@@ -7,5 +7,6 @@ turn_direction		= room_speed * irandom_range(2,4)
 speed				= irandom(3)
 explosion_repeat	= 4
 shake				= 6
-distance_player		= 200
+distance_player		= 400
 enemy_damage		= 1
+cause_damage		= false

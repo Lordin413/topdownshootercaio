@@ -9,7 +9,6 @@ delay_shot			= 0
 speed_shot			= 15
 wait_shot			= room_speed * 0.2
 sprite_time			= 0
-player_life			= 3
 invincible			= false
 invincible_time		= 0
 blink				= 0.05
@@ -37,10 +36,14 @@ if ( right || left || up || down){
 	image_index=6;
 	image_speed=0;
 }
-
+player_stay_room()
 
 }
 	
+player_stay_room = function(){
+	x = clamp(x, sprite_width/2, room_width - sprite_width/2)
+	y = clamp(y, sprite_height/2, room_height - sprite_height/2)
+}
 	
 shooting = function (){
 	var _mouse = point_direction(x, y, mouse_x, mouse_y)
@@ -75,10 +78,10 @@ shooting_effect = function(){
 lose_life = function(){
 	var _enemy_damage = instance_place(x, y, obj_enemy_functions)
 	if (_enemy_damage) & (invincible = false){
-			player_life -= _enemy_damage.enemy_damage
+			global.player_life -= _enemy_damage.enemy_damage
 			invincible_time = room_speed * 3
 	}
-	if (player_life <= 0){
+	if (global.player_life <= 0){
 		instance_destroy()	
 	}
 }
